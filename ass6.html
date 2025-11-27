@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        .card{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            position: relative;
+
+        }
+        .bx{
+            height: 70%;
+            width: 60%;
+            background-color: #42403C;
+            position:absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .cx{
+            height:85% ;
+            width: 65%;
+            background-color: white;
+            position: absolute;
+            margin:auto ;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .dx{
+            height: 45% ;
+            width: 25%;
+            background-color: whitesmoke;
+            position: relative;
+            display: inline-block;
+            top: 100px;
+            bottom: 0;
+            left:40px;
+            right: 0;
+        }
+         .dx img{
+            width: 100%;
+            height:100%;
+           display: block;
+        }
+        .text{
+               position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+        }
+        .textt{
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.1;
+    color: aliceblue;
+    font-size: 12px;
+   
+    font-family: Arial, Helvetica, sans-serif;
+        }
+        .ex{
+             height: 60% ;
+            width: 100%;
+            background-color: rgb(226, 33, 33);
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            left:0px;
+            right: 0px;
+            clip-path: polygon(0 0 , 100% 0, 100% 90% ,0 100%);
+            
+        }
+        .ex img{
+            width: 100%;
+            height:100%
+        }
+        .fx{
+             height: 25% ;
+            width: 25%;
+            background-color: white;
+            position: absolute;
+            top: 280px;
+            bottom: 9px;
+            left:40px;
+            right: 0;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            }
+            .topbutton{
+                display: flex;
+                gap: 8px;
+                
+            }
+           
+            .buttombutton{
+                display: flex;
+                justify-content: center;
+                
+            }
+            .btn{
+                padding: 4px 4px;
+                border: 2px solid rgb(186, 185, 185);
+                color: rgb(186, 185, 185);
+                background-color: white;
+                border-radius: 12px;
+                font-size: 10px;
+                cursor: pointer;
+                
+                width: auto;
+                display: inline-block;
+                text-align: center;
+            }
+            .gx{
+            height: 38% ;
+            width: 65%;
+            background-color: white;
+            position: absolute;
+            top: 230px;
+            bottom: 0;
+            left:180px;
+            right: 0;
+            z-index: 1;
+        }
+        p{
+            padding: 30px 20px;
+            font-size: 12px;
+            color: rgb(137, 135, 135);
+        }
+        .hx{
+            height: 11% ;
+            width: 65%;
+            background-color: white;
+            position: absolute;
+            top: 352px;
+            bottom: 0;
+            left:180px;
+            right: 0;
+            z-index: 2;
+        }
+        
+            
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="bx">
+            <div class="cx">
+                <div class="ex">
+                    <img src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-150296-hobbit624-1355430286.jpg?w=624&h=420&crop=1" alt="">
+                    <div class="text">The Hobbit</div>
+                    </div>
+                    <div class="textt">&nbsp;&nbsp;&nbsp;&nbsp;The Battle of the Five Armies <br> &nbsp;&nbsp;&nbsp;⭐⭐⭐⭐ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;❤️109 likes
+                    </div>
+                <div class="dx">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMLLqtEofZGAwwvZFHUj-kiHGs-KvaMuzaYQ&s" alt="">
+                </div>
+                <div class="fx">
+                    <div class="topbutton">
+                    <button class="btn">action</button>
+                    <button class="btn">fantasy</button>
+                    </div>
+                    <div class="buttombutton">
+                    <button class="btn">adventure</button>
+                    </div>
+                </div>
+                <div class="gx">
+                    <p>
+                    Bilbo Baggins is swept into a quest to reclaim the lost Dwarf Kingdom of Erebor from the fearsome dragon Smaug. Approached out of the blue by the wizard Gandalf the Grey. Bilbo funds himself joining a company of thirteen dwarves led by the legendary warrior, Thorin Oakenshield. Their journey will take them into the Wild; through... <a href="www.wikipedia.com">read more</a></p>
+
+                </div>
+                <div class="hx"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

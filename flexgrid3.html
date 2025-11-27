@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 200px;
+            width:700px;
+            border: 2px solid black;
+            margin: 30px;
+            padding:20px;
+            border-radius: 22px;
+            background-color: rgb(234, 102, 54);
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .item{
+            background-color: rgb(216, 158, 216);
+            border-radius: 22px;
+        border: 1px solid black;
+    }
+            
+        .item.ax{
+            height: 60px;
+            width: 150px ;
+            z-index: 2;
+        }
+        .item.bx{
+            height:60px;
+            width: 100px;
+        }
+        .item.cx{
+            height:60px;
+            width:150px;
+            align-self:flex-end;
+        }
+        .item.dx{
+            height: 60px;
+            width: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item ax"></div>
+        <div class="item bx"></div>
+        <div class="item cx"></div>
+        <div class="item dx"></div>
+    </div>
+</body>
+</html>
