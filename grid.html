@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+.grid-box{
+    max-width: 600px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 100px 100px;
+    /* grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    place-content: center; */
+    /* place-items: centre; */
+    /* gap: 10px; */
+    /* justify-items: center; */
+    /* justify-content: start;
+    align-content: center; */
+}
+.item1{
+    background-color: aquamarine;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.item2{
+    background-color: rgb(21, 180, 53);
+}.item3{
+    background-color: rgb(15, 63, 166);
+}.item4{
+    background-color: rgb(197, 206, 18);
+}.item5{
+    background-color: rgb(114, 8, 82);
+}.item6{
+    background-color: rgb(218, 115, 5);
+}
+    </style>
+</head>
+<body>
+    <div class="grid-box">
+        <div class="item item1">
+            <h3>Box1</h3>
+        </div>
+          <div class="item item2">
+            <h3>Box2</h3>
+          </div> 
+           <div class="item item3">
+            <h3>Box3</h3>
+           </div>  
+          <div class="item item4">
+            <h3>Box4 </h3>
+          </div>
+            <div class="item item5">
+                <h3>Box5</h3>
+            </div>
+              <div class="item item6">
+                <h3>Box6</h3>
+              </div>
+    </div>
+    
+</body>
+</html>
