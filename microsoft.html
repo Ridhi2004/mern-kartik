@@ -6,6 +6,7 @@
   <title>Microsoft</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+
     *{
       margin: 0;
       padding: 0;
@@ -16,6 +17,8 @@
       padding: 0 ;
     }
     header{
+      flex-direction: row;
+      flex-wrap: wrap;
       padding: 15px 45px;
       display: flex;
       justify-content: space-between;
@@ -25,6 +28,7 @@
       display: flex;
       align-items: center;
       gap: 20px;
+      flex-wrap: wrap;
     }
     nav{
       display: flex;
@@ -45,6 +49,7 @@
       text-underline-offset: 4px;
     }
     .hero{
+
       width: 100%;
       height: 550px;
       background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-Surface-Laptop-Copilot-PC-Platinum-FY26HOL?&resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=95&fit=constrain&dpr=on,2);
@@ -464,6 +469,149 @@ button:hover{
   color: #000;
   text-decoration: underline;
 }
+/* --- MOBILE FIRST --- */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero .info {
+    max-width: 100%;
+  }
+
+  .icon {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .Xbox, .biodiversity {
+    flex-direction: column;
+    height: auto;
+    margin: 30px 20px;
+  }
+
+  .Xbox-info, .biodiversity-info {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Xbox-image, .biodiversity-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .Xbox-image img, .biodiversity-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .businesses, .AI, .copilot, .card-section, .business {
+    padding: 20px;
+  }
+
+  .card, .box, .pilot {
+    margin: 0 auto;
+  }
+
+  .card p, .box p, .pilot p {
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .questions h1 {
+    font-size: 22px;
+  }
+
+  .footer {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero-button, .hero .tag {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .card h3, .box h3, .pilot h3 {
+    font-size: 16px;
+  }
+
+  .card p, .box p, .pilot p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-button, .hero .tag {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .card-section, .business, .copilot {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .card, .box, .pilot {
+    width: 100%;
+  }
+
+  .questions h1 {
+    font-size: 18px;
+  }
+}
+
 
 
 
